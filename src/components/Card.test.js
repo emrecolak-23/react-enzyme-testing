@@ -1,4 +1,6 @@
 import { shallow } from 'enzyme';
 import Card from './Card';
 
-console.log(shallow(<Card />));
+it('expect to render Card component', () => {
+  expect(shallow(<Card />)).toMatchSnapshot();
+});
